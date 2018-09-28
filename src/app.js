@@ -39,16 +39,25 @@ class Action extends React.Component {
 }
 
 class Options extends React.Component {
-  removeAll() {
-    alert("removeAll")
+  constructor(props) {
+    // Have to do this to override any behavior
+    super(props)
+      // bind() is used to pass on values, such as this to the next function / object
+      // allowing them to refer to the same object / component
+    this.handleRemoveAll = this.handleRemoveAll.bind(this)
   }
+
+  handleRemoveAll() {
+    console.log(this.props.options)
+  }
+
   render() {
     return (
       <div>
+        <button onClick={this.handleRemoveAll.bind(this)}>Remove All</button>
         {this.props.options.map(option => {
           return <Option key={option} optionText={option} />
         })}
-        <button onClick={this.removeAll}>Remove All</button>
       </div>
     )
   }
