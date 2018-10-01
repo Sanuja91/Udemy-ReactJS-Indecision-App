@@ -11,23 +11,23 @@ class Counter extends React.Component {
   }
 
   handleAddOne() {
-    this.setState((prevState) => {
-      return { count: prevState.count + 1}
+    this.setState(prevState => {
+      return { count: prevState.count + 1 }
     })
   }
 
   handleMinusOne() {
-    this.setState((prevState) => {
-      return { count: prevState.count - 1}
+    this.setState(prevState => {
+      return { count: prevState.count - 1 }
     })
   }
 
   handleReset() {
     this.setState(() => {
-      return { count: 0}
+      return { count: 0 }
     })
   }
-  
+
   render() {
     return (
       <div>
@@ -40,8 +40,7 @@ class Counter extends React.Component {
   }
 }
 
-
-ReactDOM.render(<Counter />, document.getElementById('app'))
+ReactDOM.render(<Counter />, document.getElementById("app"))
 
 // let count = 0
 // const plusButton = "plus_button"
@@ -65,8 +64,6 @@ ReactDOM.render(<Counter />, document.getElementById('app'))
 //   console.log("reset")
 //   renderCounterApp()
 // }
-
-
 
 // const renderCounterApp =()=>{
 //   const templateTwo = (
