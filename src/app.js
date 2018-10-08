@@ -21,6 +21,7 @@ class IndecisionApp extends React.Component {
     }
     catch (e) { }
   }
+
   componentDidUpdate(prevProps, prevState) {
     if (prevState.options.length !== this.state.options.length) {
       const json = JSON.stringify(this.state.options)
@@ -28,6 +29,7 @@ class IndecisionApp extends React.Component {
     }
     console.log('Component did Update!')
   }
+  
   componentWillUnmount() {
     console.log('Component will Unmount')
   }
