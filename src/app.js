@@ -1,4 +1,5 @@
-import { square, add } from './utils.js'
+// First import is the default export
+import subtract, { square, add } from './utils.js'
 
 console.log('app.js is running')
 console.log(square(4))
