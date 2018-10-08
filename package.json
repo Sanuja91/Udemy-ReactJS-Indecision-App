@@ -7,11 +7,14 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
-    "live-server": "^1.2.0"
+    "live-server": "^1.2.0",
+    "webpack": "^4.20.2"
   },
   "scripts": {
-    "build": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
+    "build": "webpack --watch",
+    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
     "play": "babel src/playground/counter-example.js --out-file=public/scripts/app.js --presets=env,react --watch",
-    "serve": "live-server public"
+    "serve": "live-server public",
+    "webpack-cli": "^3.1.2"
   }
 }
