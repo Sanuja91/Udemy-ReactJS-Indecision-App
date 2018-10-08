@@ -11,6 +11,16 @@ class IndecisionApp extends React.Component {
     }
   }
 
+  // Component lifecycle methods!
+  componentDidMount() {
+    console.log('Component did Mount!')
+  }
+  componentDidUpdate(prevProps, prevState) {
+    console.log('Component did Update!')
+  }
+  componentWillUnmount() {
+    console.log('Component will Unmount')
+  }
 
   handleDeleteOptions() {
     // Returns implicit objects and not function body
