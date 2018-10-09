@@ -6,10 +6,20 @@ const currentLoc = __dirname
 // Where the application kick off - entry?
 module.exports = {
     entry: './src/app.js',
-    mode:'development',
+    // Where to output the final bundle file?
     output: {
         path: path.join(currentLoc, 'public'),
         filename: 'bundle.js'
+    },
+
+    // Adds the loaders such as babel to convert ES6 to ES5
+    module: {
+        rules: [{
+            loader: 'babel-loader',
+
+            // Runs through files ending with js
+            test: /\.js$/,
+            exclude:/node_modules/
+        }]
     }
 }
-// Where to output the final bundle file?
