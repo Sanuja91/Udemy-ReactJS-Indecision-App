@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 
 // // Stateful functional component
 // class Action extends React.Component {
@@ -14,15 +14,12 @@ import React from 'react'
 // }
 
 // Stateless functional component
-const Action = props => {
-    return (
-      <div>
-        <button onClick={props.handlePick} disabled={!props.hasOptions}>
-          What should I do?
-          </button>
-      </div>
-    )
-  }
-  
-  
-export default Action  
+const Action = props => (
+  <div>
+    <button onClick={props.handlePick} disabled={!props.hasOptions}>
+      What should I do?
+    </button>
+  </div>
+)
+
+export default Action
