@@ -1,0 +1,38 @@
+// button - Naming syntax for Block
+// button__element - Naming syntax for Element
+// button--modifier - Naming syntax for Modifier
+
+// Block
+// Big Button
+.big-button {
+  background: $purple;
+  border: none;
+  border-bottom: 0.6rem solid darken($color: $purple, $amount: 10%);
+  color: white;
+  font-weight: bold;
+  font-size: $l-size;
+  margin-bottom: $xl-size;
+  padding: 2.4rem;
+  width: 100%;
+}
+
+.big-button:disabled {
+  opacity: 0.5;
+}
+
+// Block
+// Button
+.button {
+  background: $purple;
+  border-bottom: 0.3rem solid darken($color: $purple, $amount: 10%);
+  color: white;
+  font-weight: 500;
+  padding: $s-size;
+}
+
+// Modifier
+.button--link {
+  background: none;
+  border: none;
+  color: $off-white;
+}

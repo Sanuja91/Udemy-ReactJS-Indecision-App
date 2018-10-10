@@ -5,7 +5,11 @@ import Option from "./Option"
 const Options = props => (
   // Calls handleDeleteOptions that was passed down from IndecisionApp
   <div>
-    <button onClick={props.handleDeleteOptions}>Remove All</button>
+    <button 
+    // Button Block with Button--link Modifier
+    className = "button button--link"
+    onClick={props.handleDeleteOptions}
+    >Remove All</button>
     {props.options.length === 0 && <p>Please add an option to get started!</p>}
     {props.options.map(option => {
       return (
