@@ -1,3 +1,5 @@
-// Import partial
+// Import partial, import settings first
+@import "./base/settings";
 @import "./base/base";
+@import "./components/container";
 @import "./components/header";
