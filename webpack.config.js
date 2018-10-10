@@ -23,7 +23,7 @@ module.exports = {
       },
       {
         // Runs through files ending with css
-        test: /\.scss$/,
+        test: /\.s?css$/,
         // Use allows us to use an array of loaders
         use: [
             'style-loader',
