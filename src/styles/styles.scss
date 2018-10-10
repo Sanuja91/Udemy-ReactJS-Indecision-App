@@ -1,5 +1,3 @@
-$brand-color: blue;
-
-* {
-  color: $brand-color;
-}
+// Import partial
+@import "./base/base";
+@import "./components/header";
